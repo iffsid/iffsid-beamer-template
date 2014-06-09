@@ -1,0 +1,50 @@
+\documentclass{beamer}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{tt}
+% nicer font
+\usepackage{eulervm}
+
+\usetheme{iffsid}
+
+\title{Beamer Example}
+\author{Galahad Threepwood}
+\institute{Blandings Castle}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Just some Text}
+\begin{frame}
+  \frametitle{Here is some text}
+  \framesubtitle{Isn't it pretty!}
+  \begin{itemize}[<+->]
+  \item This is some normal text.\\
+  \item This is some \alert{alerted text.}\\
+  \item This is some inline math $e^{i\pi} + 1 =0$
+  \item This is some displayed math
+    \begin{equation}
+      f^{(n)}(z_0) = \frac{n!}{2\pi i}\oint_C \frac{f(z)}{(z-z_0)^{n+1}} dz
+    \end{equation}
+    \begin{quotation}
+      This is a quotation.
+    \end{quotation}
+  \end{itemize}
+\end{frame}
+
+\end{document}

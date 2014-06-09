@@ -1,0 +1,188 @@
+%% beamercolorthemeiffsid.sty
+
+%% modified and adjusted from:
+%% https://github.com/kartikprabhu/Kalgan-Mule-template
+
+%%  This work may be distributed and/or modified under the
+%%  conditions of the LaTeX Project Public License, either version 1.3
+%%  of this license or (at your option) any later version.
+%%  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%%  and version 1.3 or later is part of all distributions of LaTeX
+%%  version 2005/12/01 or later.
+%%
+%%  Or see the file LPPL-license for more details.
+
+\mode<presentation>
+
+\usecolortheme{whale}
+
+% http://www.flatuicolorpicker.com/all
+\definecolor{fui_black}{RGB}{26,30,30}     % Ebony Clay [modified]
+\definecolor{fui_white}{RGB}{218,223,225}  % Iron
+\definecolor{fui_white2}{RGB}{238,238,238} % Gallery
+\definecolor{fui_blue}{RGB}{58,83,155}     % Chambray
+\definecolor{fui_lblue}{RGB}{103,128,159}  % Hoki
+\definecolor{fui_purple}{RGB}{190,144,212} % Light Wisteria
+\definecolor{fui_red}{RGB}{239,73,54}      % Flamingo
+\definecolor{fui_green}{RGB}{27,188,155}   % Mountain Meadow
+\definecolor{fui_orange}{RGB}{230,179,80}  % Casablanca [modified]
+\definecolor{fui_yellow}{RGB}{249,151,59}  % Saffron
+\definecolor{fui_grey}{RGB}{171,183,183}   % Edward
+
+\setbeamercolor{palette}{}
+\setbeamercolor{palette primary}{fg=fui_white}
+\setbeamercolor{palette secondary}{fg=fui_white!75!fui_black}
+\setbeamercolor{palette tertiary}{fg=fui_white!50!fui_black}
+\setbeamercolor{palette quaternary}{fg=fui_white!25!fui_black}
+\setbeamercolor{palette sidebar}{parent=palette}
+
+\setbeamercolor{frametitle}{fg=fui_green}
+\setbeamercolor{framesubtitle}{fg=fui_lblue}
+
+\setbeamercolor{normal text}{fg=fui_white}
+\setbeamercolor{alerted text}{fg=fui_red!80!fui_black}
+\setbeamercolor{example text}{fg=green!50!fui_black}
+\setbeamercolor{structure}{fg=fui_black, bg=fui_white}
+\setbeamercolor{local structure}{parent=structure}
+% \setbeamerfont{structure}{textcolor=fui_white} % no key textcolor
+
+\setbeamercolor{math text}{fg=fui_white2}
+\setbeamercolor{math text inlined}{parent=math text}
+\setbeamercolor{math text displayed}{parent=math text}
+\setbeamercolor{normal text in math text}{}
+
+\setbeamercolor{title in head/foot}{parent=palette tertiary}
+\setbeamercolor{title in sidebar}{parent=palette sidebar secondary}
+
+\setbeamercolor{subtitle}{parent=title}
+
+\setbeamercolor{author}{fg=fui_green}
+\setbeamercolor{author in head/foot}{parent=palette primary}
+\setbeamercolor{author in sidebar}{use=palette sidebar tertiary,fg=palette sidebar tertiary.fg}
+
+\setbeamercolor{institute}{fg=fui_orange}
+\setbeamercolor{institute in head/foot}{parent=palette tertiary}
+\setbeamercolor{institute in sidebar}{use=palette sidebar tertiary,fg=palette sidebar tertiary.fg}
+
+\setbeamercolor{date}{fg=fui_blue}
+\setbeamercolor{date in head/foot}{parent=palette secondary}
+\setbeamercolor{date in sidebar}{use=palette sidebar tertiary,fg=palette sidebar tertiary.fg}
+
+\setbeamercolor{titlegraphic}{}
+
+\setbeamercolor{part name}{}
+\setbeamercolor{part title}{parent=titlelike}
+
+\setbeamercolor{section in toc}{fg=fui_white}
+\setbeamercolor{section in toc shaded}{parent=section in toc}
+\setbeamercolor{section in head/foot}{parent=palette secondary}
+\setbeamercolor{section in sidebar}{parent=palette sidebar secondary}
+\setbeamercolor{section in sidebar shaded}{use=section in sidebar,fg=section in sidebar.fg!40!bg}
+\setbeamercolor{section number projected}{parent=item projected}
+
+\setbeamercolor{subsection in toc}{}
+\setbeamercolor{subsection in toc shaded}{parent=subsection in toc}
+\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+\setbeamercolor{subsection in sidebar}{parent=palette sidebar primary}
+\setbeamercolor{subsection in sidebar shaded}{use=subsection in sidebar,fg=subsection in sidebar.fg!40!bg}
+\setbeamercolor{subsection number projected}{parent={subitem projected}}
+
+\setbeamercolor{subsubsection in toc}{parent=subsection in toc}
+\setbeamercolor{subsubsection in toc shaded}{parent=subsubsection in toc}
+\setbeamercolor{subsubsection in head/foot}{parent=subsection in head/foot}
+\setbeamercolor{subsubsection in sidebar}{parent=subsection in sidebar}
+\setbeamercolor{subsubsection in sidebar shaded}{parent=subsection in sidebar shaded}
+\setbeamercolor{subsubsection number projected}{parent=subsubitem projected}
+
+\setbeamercolor{headline}{}
+\setbeamercolor{footline}{}
+
+\setbeamercolor{sidebar}{}
+\setbeamercolor{sidebar left}{parent=sidebar}
+\setbeamercolor{sidebar right}{parent=sidebar}
+
+\setbeamercolor{logo}{parent=palette secondary}
+
+\setbeamercolor{frametitle}{parent=titlelike}
+\setbeamercolor{framesubtitle}{parent=frametitle}
+
+\setbeamercolor{frametitle right}{parent=frametitle}
+
+\setbeamercolor{caption}{}
+\setbeamercolor{caption name}{fg=fui_white}
+
+\setbeamercolor{button}{bg=fui_white!50!fui_black,fg=white}
+\setbeamercolor{button border}{use=button,fg=button.bg}
+\setbeamercolor{navigation symbols}{fg=fui_white!70!bg}
+\setbeamercolor{navigation symbols dimmed}{fg=fui_white!50!bg}
+\setbeamercolor{mini frame}{parent=section in head/foot}
+
+\setbeamercolor{block body}{parent=normal text,bg=fui_black}
+\setbeamercolor{block body alerted}{parent=block body}
+\setbeamercolor{block body example}{parent=block body}
+\setbeamercolor{block title}{fg=fui_black,bg=fui_white}
+\setbeamercolor{block title alerted}{use=alerted text,bg=fui_white, fg=alerted text.fg}
+\setbeamercolor{block title example}{use=example text,bg=fui_white, fg=example text.fg}
+
+\setbeamercolor{item}{fg=fui_orange}
+\setbeamercolor{subitem}{parent=item}
+\setbeamercolor{subsubitem}{parent=subitem}
+
+\setbeamercolor{item projected}{parent=item,use=item,fg=fui_black,bg=item.fg}
+\setbeamercolor{subitem projected}{parent=item projected}
+\setbeamercolor{subsubitem projected}{parent=subitem projected}
+
+\setbeamercolor{enumerate item}{parent=item}
+\setbeamercolor{enumerate subitem}{parent=subitem}
+\setbeamercolor{enumerate subsubitem}{parent=subsubitem}
+
+\setbeamercolor{itemize item}{parent=item}
+\setbeamercolor{itemize subitem}{parent=subitem}
+\setbeamercolor{itemize subsubitem}{parent=subsubitem}
+
+\setbeamercolor{itemize/enumerate body}{}
+\setbeamercolor{itemize/enumerate subbody}{}
+\setbeamercolor{itemize/enumerate subsubbody}{}
+
+\setbeamercolor{description item}{parent=item}
+
+\setbeamercolor{bibliography item}{parent=item}
+
+\setbeamercolor{bibliography entry author}{fg=fui_white}
+\setbeamercolor{bibliography entry title}{fg=fui_white2}
+\setbeamercolor{bibliography entry location}{fg=fui_white!65!bg}
+\setbeamercolor{bibliography entry note}{fg=fui_white!65!bg}
+
+\setbeamercolor{separation line}{}
+
+\setbeamercolor{upper separation line head}{parent=separation line}
+\setbeamercolor{middle separation line head}{parent=separation line}
+\setbeamercolor{lower separation line head}{parent=separation line}
+
+\setbeamercolor{upper separation line foot}{parent=separation line}
+\setbeamercolor{middle separation line foot}{parent=separation line}
+\setbeamercolor{lower separation line foot}{parent=separation line}
+
+\setbeamercolor{abstract}{}
+\setbeamercolor{abstract title}{fg=fui_white}
+
+\setbeamercolor{verse}{}
+
+\setbeamercolor{quotation}{fg=fui_grey}
+\setbeamercolor{quote}{parent=quotation}
+
+\setbeamercolor{page number in head/foot}{fg=fg!50!bg}
+
+\setbeamercolor{qed symbol}{fg=fui_white}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=fui_blue!60!fui_white,%
+    filecolor=fui_yellow!60!fui_white,%
+    linkcolor=fui_white,%
+    urlcolor=fui_red!60!fui_white
+}
+
+\mode
+<all>
