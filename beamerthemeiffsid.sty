@@ -14,6 +14,7 @@
 %%  Or see the file LPPL-license for more details.
 
 %% http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+%% http://kbroman.wordpress.com/2013/10/07/better-looking-latexbeamer-slides/
 
 % use these if you want a sidebar
 % \DeclareOptionBeamer{hideothersubsections}{%
@@ -39,6 +40,9 @@
 
 \setbeamertemplate{footline}[frame number]{} %sets frame numbers in the footer
 \setbeamertemplate{navigation symbols}{} %hides navigation symbols
+
+\setbeamerfont{note page}{family*=pplx,size=\scriptsize} % Palatino for notes
+\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
 
 \setbeamerfont{title}{size=\Huge,series=\bfseries}
 \setbeamerfont{author}{size=\Large}
@@ -69,6 +73,22 @@
 \setbeamersize{text margin left=15pt}
 %% this makes itemizes fade rather than vanish
 % \setbeamercovered{highly dynamic}
+
+%% better maths fonts
+%% https://tex.stackexchange.com/questions/34265/how-to-get-beamer-math-to-look-like-article-math
+\usefonttheme[onlymath]{serif}
+
+\newenvironment{frame-colour}[1]%
+{\bgroup
+  \setbeamertemplate{background canvas}[vertical shading][bottom=#1,top=#1]
+  \begin{frame}}
+  {\end{frame}
+  \egroup
+  \setbeamertemplate{background canvas}[vertical shading][bottom=fui_black,top=fui_black]}
+
+\newenvironment{frame-image}[1]%
+{\bgroup\setbeamertemplate{background canvas}{\CenterWallPaper{1}{#1}}\begin{frame}}
+{\end{frame}\egroup}
 
 %% put this into your document
 % \usetheme{iffsid}

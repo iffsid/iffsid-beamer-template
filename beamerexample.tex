@@ -5,11 +5,15 @@
 \usepackage{amssymb}
 \usepackage{subfigure}
 \usepackage{graphicx}
+\usepackage{wallpaper}
 \usepackage{booktabs}
 \usepackage{hyperref}
 \urlstyle{tt}
 % nicer font
 \usepackage{eulervm}
+
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
 
 \usetheme{iffsid}
 
@@ -24,10 +28,11 @@
   \titlepage
 \end{frame}
 
-\begin{frame}
+\begin{frame-colour}{fui_yellow}
   \frametitle{Outline}
   \tableofcontents
-\end{frame}
+  \note{This is what I'm going to be talking about.}
+\end{frame-colour}
 
 \section{Just some Text}
 \begin{frame}
